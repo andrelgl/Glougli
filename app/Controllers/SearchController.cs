@@ -1,15 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using app.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace app.Controllers {
     [Route ("api/search")]
-    public class HomeController : Controller {
+    public class SearchController : Controller {
         public GlougliDbCOntext Context { get; }
 
-        public HomeController (GlougliDbCOntext context) {
+        public SearchController (GlougliDbCOntext context) {
             Context = context;
         }
 
